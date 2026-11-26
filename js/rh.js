@@ -322,7 +322,7 @@ async function abrirDetalhesFuncionario(funcionario) {
     });
 
     try {
-        // Consulta novamente a API para obter o nome e o setor atuais.
+        
         const funcionariosAtualizados = await obterFuncionarios();
 
         if (!Array.isArray(funcionariosAtualizados)) {
@@ -337,7 +337,7 @@ async function abrirDetalhesFuncionario(funcionario) {
             throw new Error("Funcionário não encontrado na API.");
         }
 
-        // Atualiza também a lista mantida no navegador.
+        
         funcionario = funcionarioAtualizado;
 
         funcionarios = funcionarios.map(item =>
@@ -346,7 +346,7 @@ async function abrirDetalhesFuncionario(funcionario) {
                 : item
         );
 
-        // Exibe o nome e o setor atuais.
+        
         nomeFuncionarioDetalhes.textContent =
             `Funcionário: ${funcionarioAtualizado.nome} — Setor: ${funcionarioAtualizado.setor}`;
 
