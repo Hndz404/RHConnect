@@ -1,0 +1,6 @@
+@RHConnectAPI_HostAddress = http://localhost:5109
+
+GET {{RHConnectAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
