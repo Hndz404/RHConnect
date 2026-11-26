@@ -151,7 +151,7 @@ async function requisicaoAPI(url, opcoes = {}) {
                 erro.mensagem ||
                 mensagem;
         } catch {
-            // Mantém a mensagem HTTP padrão quando não há JSON de erro.
+            
         }
 
         throw new Error(mensagem);
