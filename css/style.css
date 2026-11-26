@@ -544,9 +544,6 @@ footer {
     outline-offset: 3px;
 }
 
-/* ========================================
-   PAINEL DO FUNCIONÁRIO
-======================================== */
 
 /* Botões de registro de ponto */
 .painel-funcionario .botoes-ponto {
@@ -571,9 +568,6 @@ footer {
     min-width: 100px;
 }
 
-/* ========================================
-   PAINEL DO RH
-======================================== */
 
 /* Cadastrar funcionário */
 .painel-rh > a.botao {
@@ -601,9 +595,6 @@ footer {
     min-width: 100px;
 }
 
-/* ========================================
-   TELAS PEQUENAS
-======================================== */
 
 @media (max-width: 600px) {
     .botao.botao-login {
