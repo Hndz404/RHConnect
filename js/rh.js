@@ -586,11 +586,10 @@ async function editarFuncionario(funcionario) {
 
         alert("Funcionário atualizado com sucesso!");
 
-        // Recarrega a lista usando os dados mais recentes da API.
+       
         await carregarFuncionarios();
 
-        // Se os detalhes estiverem abertos para este funcionário,
-        // atualiza também o nome e os dados exibidos nessa área.
+  
         if (
             detalhesFuncionario &&
             !detalhesFuncionario.hidden &&
