@@ -522,7 +522,6 @@ footer {
         box-shadow 0.2s ease;
 }
 
-/* Efeito ao passar o mouse */
 .botao.botao-login:hover {
     background: linear-gradient(135deg, #7c3aed, #5b21b6) !important;
     border-color: #7c3aed !important;
@@ -532,20 +531,19 @@ footer {
     box-shadow: 0 6px 14px rgba(91, 33, 182, 0.25);
 }
 
-/* Efeito ao clicar */
 .botao.botao-login:active {
     transform: translateY(0);
     box-shadow: 0 2px 5px rgba(91, 33, 182, 0.18);
 }
 
-/* Destaque de acessibilidade ao usar teclado */
+
 .botao.botao-login:focus-visible {
     outline: 3px solid rgba(139, 92, 246, 0.4);
     outline-offset: 3px;
 }
 
 
-/* Botões de registro de ponto */
+
 .painel-funcionario .botoes-ponto {
     display: flex;
     flex-wrap: wrap;
@@ -558,24 +556,21 @@ footer {
     min-width: 0;
 }
 
-/* Botão de atualização do banco de horas */
+
 .painel-funcionario #atualizarDados {
     margin-top: 10px;
 }
 
-/* Botão Sair do funcionário */
 .painel-funcionario #sair {
     min-width: 100px;
 }
 
-
-/* Cadastrar funcionário */
 .painel-rh > a.botao {
     margin-top: 8px;
     margin-bottom: 12px;
 }
 
-/* Botões de ações da tabela */
+
 .painel-rh .tabela-funcionarios td .botao,
 .painel-rh .tabela-funcionarios td button {
     min-height: 40px;
@@ -584,12 +579,10 @@ footer {
     border-radius: 9px;
 }
 
-/* Botão de fechar detalhes */
 .painel-rh #fecharDetalhes {
     margin-top: 12px;
 }
 
-/* Botão Sair do RH */
 .painel-rh > #sair {
     margin-top: 18px;
     min-width: 100px;
