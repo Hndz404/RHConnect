@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar senha | RH Connect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/trocar-senha.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1>Crie sua nova senha</h1>
+
+            <p>
+                Este é seu primeiro acesso. Por segurança,
+                você precisa substituir a senha temporária.
+            </p>
+
+            <form id="formNovaSenha">
+                <label for="novaSenha">Nova senha</label>
+                <input
+                    type="password"
+                    id="novaSenha"
+                    minlength="8"
+                    autocomplete="new-password"
+                    placeholder="Mínimo de 8 caracteres"
+                    required
+                >
+
+                <label for="confirmarSenha">Confirme a nova senha</label>
+                <input
+                    type="password"
+                    id="confirmarSenha"
+                    minlength="8"
+                    autocomplete="new-password"
+                    placeholder="Digite a senha novamente"
+                    required
+                >
+
+                <p id="erroSenha" class="mensagem-erro"></p>
+
+                <button type="submit" class="botao">
+                    Salvar nova senha
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+

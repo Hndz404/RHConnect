@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | RH Connect</title>
+
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/app.js" defer></script>
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <a href="../index.html" class="logo login-logo">
+            <span class="logo-icone">RH</span>
+            <span>Connect</span>
+        </a>
+
+        <section class="login-card">
+
+            <div class="login-cabecalho">
+                <h1>Acesse sua conta</h1>
+                <p>Entre para continuar no RH Connect.</p>
+            </div>
+
+            <div class="seletor-perfil">
+
+                <button
+                    type="button"
+                    class="perfil-btn ativo"
+                    data-perfil="funcionario"
+                >
+                    Funcionário
+                </button>
+
+                <button
+                    type="button"
+                    class="perfil-btn"
+                    data-perfil="rh"
+                >
+                    Gerência / RH
+                </button>
+
+            </div>
+
+            <form id="formLogin">
+
+                <label for="usuario" id="labelUsuario">
+                    Nome completo
+                </label>
+
+                <input
+                    type="text"
+                    id="usuario"
+                    class="form-control"
+                    placeholder="Digite seu nome completo"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="senha">Senha</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    class="form-control"
+                    placeholder="Digite sua senha"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p
+                    id="mensagem"
+                    class="mensagem"
+                    role="status"
+                ></p>
+
+                <button
+                    type="submit"
+                    class="botao botao-login btn"
+                >
+                    Entrar
+                </button>
+
+            </form>
+
+            <a href="../index.html" class="voltar-link">
+                ← Voltar para a página inicial
+            </a>
+
+        </section>
+
+        <p class="login-rodape">
+            RH Connect · Projeto acadêmico
+        </p>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
